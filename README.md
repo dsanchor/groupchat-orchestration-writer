@@ -1,10 +1,10 @@
-# Sequential orchestration agent
+# Group chat orchestration agent
 
 This repository guides you through how to deploy a hosted agent in Microsoft Foundry.
 
 ## Overview
 
-This agent is designed to perform sequential orchestration tasks, allowing you to automate complex workflows and processes. By leveraging Microsoft Foundry's capabilities, you can easily deploy and manage this agent to enhance your operational efficiency.
+This agent is designed to perform group chat orchestration tasks, allowing you to automate complex workflows and processes. By leveraging Microsoft Foundry's capabilities, you can easily deploy and manage this agent to enhance your operational efficiency.
 
 ## Requirements
 
@@ -19,11 +19,11 @@ AZURE_AI_PROJECT_ENDPOINT=<your-foundry-endpoint>
 AZURE_AI_MODEL_DEPLOYMENT_NAME=<your-deployment-name>
 ```
 
-Agents that are part of the sequential orchestration should have been created in the Foundry project. Follow the instructions from this repository: [agents-observability-tt202](https://github.com/dsanchor/agents-observability-tt202/tree/main/from-zero-to-hero#create-agents)
+Agents that are part of the group chat orchestration should have been created in the Foundry project. Follow the instructions from this repository: [agents-observability-tt202](https://github.com/dsanchor/agents-observability-tt202/tree/main/from-zero-to-hero#create-agents)
 
 ## Deployment
 
-Click on the "Deploy" button in the Foundry extension in Visual Studio Code. This will initiate the deployment process for the sequential orchestration agent. Follow the prompts to complete the deployment.
+Click on the "Deploy" button in the Foundry extension in Visual Studio Code. This will initiate the deployment process for the group chat orchestration agent. Follow the prompts to complete the deployment.
 
 ![Deployment Screenshot](images/image.png)
 

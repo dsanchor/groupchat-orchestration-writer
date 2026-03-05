@@ -1,0 +1,9 @@
+{
+  "hostedAgentDeployOptions": {
+    "dockerContextPath": "/workspaces/groupchat-orchestration-writer",
+    "dockerfilePath": "/workspaces/groupchat-orchestration-writer/Dockerfile",
+    "cpu": "1.0",
+    "memory": "2.0Gi",
+    "agentName": "groupchat-orchestration-writer"
+  }
+}
