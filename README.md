@@ -42,6 +42,11 @@ Then, use the following command to login to your Azure Container Registry (ACR):
 ```bash
 docker login <your-acr-name>.azurecr.io -u <your-username> -p <your-password>
 ```
+And finally, run the image that has been generated. You can check under the `output` of the Microsoft Foundry extension the image tag. And run it:
+
+```bash
+docker run <image>
+```
 
 ### Permission issues
 
