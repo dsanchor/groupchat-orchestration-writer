@@ -108,7 +108,15 @@ async def main() -> None:
         # Build workflow using RC2 API
         # Constructor params instead of fluent builder methods
         def termination_check(messages: list[Message]) -> bool:
-            return sum(1 for msg in messages if str(msg.role) == "assistant") >= 6
+            # Count only assistant messages since the last user message
+            # to avoid accumulated history triggering immediate termination
+            count = 0
+            for msg in reversed(messages):
+                if str(msg.role) == "user":
+                    break
+                if str(msg.role) == "assistant":
+                    count += 1
+            return count >= 6
 
         workflow = GroupChatBuilder(
             participants=[researcher, writer, reviewer],
